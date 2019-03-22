@@ -80,6 +80,7 @@ body{
     background: linear-gradient(to top, rgba(255, 255, 255, .9),rgba(255, 255, 255, .9)), url(./img/img3.jpg);
     background-size: cover;
     display: flex;
+    z-index: 5;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -358,13 +359,13 @@ body{
     letter-spacing: .2rem;
 }
 .small-underline{
-    width: 40rem;
+    width: 15rem;
     height: .2rem;
     background-color: rgb(236, 146, 161);
     margin: 0 auto 1rem auto;
 }
 .big-underline{
-    width: 70rem;
+    width: 30rem;
     height: .2rem;
     margin: auto;
     background-color: rgb(236, 146, 161);
@@ -610,4 +611,139 @@ body{
     font-size: 2rem;
 }
 /* end of footer */
+@media(max-width:1400px){
+    .customers-card-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .customer-card:first-child{
+        margin-bottom: 3rem;
+    }
 
+    .main-part{
+        flex-direction: column;
+    }
+
+    .footer-list{
+        display: flex;
+    }
+
+    .footer-list-item{
+        margin-right: 3rem;
+    }
+}
+
+@media(max-width:1200px){
+    .about-us{
+        flex-direction: column;
+        padding-bottom: 20rem;
+    }
+    .about-us-content{
+        margin-bottom: 13rem;
+
+    }
+    .about-us-images{
+        margin-left: 27rem;
+        z-index: 0;
+    }
+    .image{
+        order: 1;
+        width: 25rem;
+    }
+}
+@media(max-width:900px){
+    .banner{
+        text-align: center;
+    }
+    .banner-heading{
+        font-size: 4.5rem;
+    }
+    .banner-paragraph{
+        font-size: 2.5rem;
+    }
+    .banner-button{
+        width: 16rem;
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:750px){
+    .customer-card{
+        flex-direction: column;
+        width: 20rem;
+    }
+    .customer-image{
+        margin-left: 0;
+    }
+    .footer-list{
+        display: block;
+    }
+    .creator-part{
+        flex-direction: column;
+        text-align: center;
+    }
+    .copyright-text{
+        order: 1;
+    }
+}
+@media(max-width:500px){
+    .navigation{
+        width:28rem;
+    }
+    .navigation-search-input{
+        width: 20rem;
+    }
+    .about-us-heading{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .sub-heading{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .about-us-content{
+        padding: 5rem;
+        font-size: 1rem;
+    }
+    .image{
+        width: 20rem;
+    }
+    .about-us-paragraph{
+        font-size: 2rem;
+    }
+    .about-us-images{
+        margin-left: 20rem;
+    }
+
+    .small-underline{
+        width: 5rem;
+    }
+    .big-underline{
+        width: 12rem;
+    }
+    .art-card-heading{
+        font-size: 1.5rem;
+    }
+    .art-price{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+    .art-card-btn{
+        margin-bottom: 10rem;
+        padding: .5rem .5rem;
+        font-size: 1.2rem;
+    }
+    .footer-input{
+        width:12rem;
+    }
+    .customers-paragraph{
+        font-size: 1.4rem;
+        width: 50%;
+    }
+    .main-part{
+        padding: 2rem;
+    }
+    .image-wrapper{
+        width: 9rem;
+    }
+}
